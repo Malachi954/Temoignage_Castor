@@ -1,0 +1,291 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 50px;
+        margin-bottom: 0;
+        border-bottom: 1px solid #44454e;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        background-color: #23252f;
+        color: white;
+        list-style-type: none;
+    }
+
+    nav ul li button {
+
+        border: none;
+        border-radius: 5px;
+        padding: 9px;
+        color: #6d62fd;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    nav ul li button:hover{
+        transform: translateY(-2px);
+        transition: 0.2s all;
+    }
+    header {
+        /* background-color:; */
+        color: white;
+        padding: 2rem;
+        text-align: center;
+
+        position: relative;
+        background-image: url('images/pleased-young-man-with-books-textbooks-looking-up-with-smile-while-his-classmates-discussing-something-indoor-portrait-students-preparing-examination.jpg');
+        background-size: cover;        /* pour que l'image couvre toute la section */
+        background-position: center;   /* pour la centrer */
+        background-repeat: no-repeat;  /* pour éviter la répétition */
+      
+      
+    }
+
+    header::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5); /* filtre sombre */
+        z-index: 1;
+      }
+
+    header h1,p{
+
+        position: relative;
+        z-index: 2;
+    }
+
+
+    .container {
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin: 0.5rem 0 0.2rem;
+    }
+    .card p.role {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .promotion-section{
+
+        background-color: #23252f;
+        color: white;
+        padding: 50px;
+    }
+
+    .promotion-section h2
+    {
+        /* padding: 15px; */
+        font-size: 55px;
+        letter-spacing: 1px;
+        color: #6d62fd;
+        /* background: linear-gradient(135deg, #1f1f1f, #2c2c54, #3a3a6f); */
+
+    }
+
+    .promotion-wrapper{
+
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+    .promotion-castor{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Oswald', serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .promotion-castor p {
+        
+        letter-spacing: 1px;
+    }
+
+    .data-title{
+
+        font-size: 50px;  
+ 
+    }
+
+    aside{
+
+        padding: 30px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #f6f6f7;
+    }
+
+    aside h3{
+
+        padding-bottom: 20px;
+        
+    }
+
+    aside h3 span {
+
+        color: #6d62fd;
+    }
+
+    .prom-stat{
+
+        border: 1px solid #dbdbdc;
+        padding: 20px;
+        background-color: #eaeaea;
+    }
+
+    .prom-stat p {
+
+        text-align: center;
+        margin: 0;
+    }
+
+    .prom-text{
+
+        border: 1px solid #d3d3d3;
+        padding: 20px;
+        border-top: none;
+    }
+
+    .prom-text p {
+
+        text-align: center;
+        margin: 0;
+    }
+
+    article{
+
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+        padding: 30px;
+        color: black;
+    }
+
+    article h3{
+
+        font-size: 40px;
+        text-align: center;
+        margin: 0;
+        padding: 20px 20px 35px 20px;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+    }
+
+    .article-1{
+
+        flex: 1;
+    }
+
+    .article-wrapper{
+
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: center; */
+        text-align: center;
+    }
+    
+    /* footer {
+      background-color: #23252f;
+      color: white;
+      text-align: center;
+      margin: 0;
+    } */
+
+
+    .tem-video{
+
+        background-color: #23252f;
+    }
+  
+    /* footer */
+    footer
+{
+    border-top: 2px solid #e6e7e8;
+    display: flex;
+    justify-content: space-around;
+    /* padding-top: 15px; */
+    margin: 50px;
+    padding: 50px 50px 0 50px;
+    flex-wrap: wrap;
+}
+
+
+footer ul 
+{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: #333;
+    /* margin: 0; */
+    padding: 0;
+    gap: 10px;
+
+}
+
+footer ul li a 
+{
+    text-decoration: none;
+    color: #747579;
+  
+}
+
+footer ul li a:hover
+{
+    color: #5b5c5f;
+}
+
+footer p 
+{
+    color: #747579; 
+}
+
+.logo_esic_cfa
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-logo a:hover
+{
+    opacity: 0.75;
+}
